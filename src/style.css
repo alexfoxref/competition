@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: 30px; 
+}
+
+.filter__wrapper {
+	width: 100%;
+	position: relative;
+}
+
+.filter {
+	width: 400px;
+	height: 50px;
+	cursor: pointer;
+	margin: 20px auto;
+	text-align: center;
+	font-size: 30px;
+	outline: none;
+	color: #346180;
+}
+
+.filter__search {
+	position: absolute;
+	width: 400px;
+	top: 70px;
+	z-index: 10;
+	display: none;
+	font-size: 30px;
+	background-color: #fff;
+	text-align: center;
+	color: #346180;
+}
+
+.filter__content {
+	margin: 10px auto;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.filter__content:hover {
+	opacity: 1;
+	text-shadow: 0 0 5px #373737;
+}
+
+.goods__wrapper {
+	display: flex;
+    flex-wrap: wrap;
+}
+
+.goods__item {
+	position: relative;
+	width: 300px;
+	padding: 10px;
+	box-shadow: 4px 4px 30px rgba(0, 0, 0, .2);
+	border-radius: 4px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.goods__item:hover {
+	box-shadow: 4px 4px 40px rgba(0, 0, 0, .3)
+}
+
+.goods__img {
+	-o-object-fit: cover;
+	object-fit: cover
+}
+
+.goods__name {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.goods__country {
+    margin: 10px 0;
+}
+
+.goods__description {
+	color: #003267;
+	margin: 10px 0;
+	height: 110px;
+}
+
+.goods__price {
+	text-align: center;
+	color: #346180;
+    margin: 10px 0;
+	font-weight: 700
+}
+
+.goods__btn {
+	width: 100%;
+	height: 40px;
+	background-color: #346180;
+	border: none;
+	outline: 0;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.goods__btn:focus {
+	outline: 0
+}
+
+.goods__btn:hover {
+	box-shadow: 0 0 15px rgba(52, 97, 128, .7)
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 15;
+	display: none;
+}
+
+.modal {
+	width: 80%;
+	height: 94%;
+	overflow: scroll;
+	background-color: #fff;
+	position: absolute;
+	z-index: 20;
+	top: 3%;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.modal__img {
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.modal__name {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.modal__country {
+    margin: 10px 0;
+}
+
+.modal__description {
+	color: #003267;
+	margin: 10px 0;
+	max-width: 800px;
+}
+
+.modal__price {
+	text-align: center;
+	color: #346180;
+    margin: 10px 0;
+	font-weight: 700
+}
